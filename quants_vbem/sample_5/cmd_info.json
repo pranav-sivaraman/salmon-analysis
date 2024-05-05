@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.10.2",
+    "index": "sapien_index",
+    "libType": "A",
+    "threads": "64",
+    "mates1": "data/5_1.fq.gz",
+    "mates2": "data/5_2.fq.gz",
+    "output": "quants_vbem/sample_5",
+    "auxDir": "aux_info"
+}

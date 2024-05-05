@@ -1,0 +1,22 @@
+{
+    "read_files": "[ data/4_1.fq.gz, data/4_2.fq.gz]",
+    "expected_format": "IU",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 29982669,
+    "num_assigned_fragments": 29982669,
+    "num_frags_with_concordant_consistent_mappings": 29390679,
+    "num_frags_with_inconsistent_or_orphan_mappings": 1144767,
+    "strand_mapping_bias": 0.500228354710689,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 14702051,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 14688628,
+    "SF": 573636,
+    "SR": 571131,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

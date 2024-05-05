@@ -1,0 +1,11 @@
+{
+    "salmon_version": "1.10.2",
+    "index": "sapien_index",
+    "libType": "A",
+    "threads": "64",
+    "mates1": "data/2_1.fq.gz",
+    "mates2": "data/2_2.fq.gz",
+    "useEM": [],
+    "output": "quants_em/sample_2",
+    "auxDir": "aux_info"
+}
