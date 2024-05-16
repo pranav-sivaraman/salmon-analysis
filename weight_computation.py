@@ -4,7 +4,7 @@ from scipy.optimize import minimize
 def MARD(weights,em_iter,vbem_iter):
     aligned_genes = pd.read_csv("salmon-analysis-main/quants_em/sample_1/quant.sf",delimiter="\t")["Name"]
     
-    ground_truth = pd.read_csv("salmon-analysis-main/ground_truth/1.sim.genes.results",delimiter="\t")
+    ground_truth = pd.read_csv("salmon-analysis-main/ground_truth/1.sim.genes.results",delimiter="\t")[["gene_id","TPM"]]
     ground_truth = ground_truth.set_index('gene_id').reindex(aligned_genes).reset_index()["TPM"]
 
     weighted_avg = weights[0] * em_iter + weights[1] * vbem_iter
