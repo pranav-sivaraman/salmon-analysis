@@ -1,4 +1,4 @@
-
+import numpy as np
 def MARD(weights,em_iter,vbem_iter,ground_truth):
     weighted_avg = (weights[0] * em_iter + weights[1] * vbem_iter)
     ARD_list = []
