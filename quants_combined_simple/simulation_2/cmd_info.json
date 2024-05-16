@@ -1,0 +1,9 @@
+{
+    "salmon_version": "1.10.3",
+    "index": "sapien_index/",
+    "libType": "A",
+    "mates1": "2_1.fq.gz",
+    "mates2": "2_2.fq.gz",
+    "output": "quants_combined_simple/simulation_2",
+    "auxDir": "aux_info"
+}
