@@ -7,7 +7,7 @@ def MARD(weights,em_iter,vbem_iter):
     ground_truth = pd.read_csv("salmon-analysis-main/ground_truth/1.sim.genes.results",delimiter="\t")[["gene_id","TPM"]]
     ground_truth = ground_truth.set_index('gene_id').reindex(aligned_genes).reset_index()["TPM"]
 
-    weighted_avg = weights[0] * em_iter + weights[1] * vbem_iter
+    weighted_avg = (weights[0] * em_iter + weights[1] * vbem_iter)/np.sum(weights)
     ARD_list = []
     
     for i in range(len(ground_truth)):
