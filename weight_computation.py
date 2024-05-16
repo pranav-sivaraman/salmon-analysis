@@ -2,7 +2,7 @@ import numpy as np
 from scipy.optimize import minimize
 
 def MARD(weights,em_iter,vbem_iter,ground_truth):
-    weighted_avg = (weights[0] * em_iter + weights[1] * vbem_iter)
+    weighted_avg = weights[0] * em_iter + weights[1] * vbem_iter
     ARD_list = []
     for i in range(len(ground_truth)):
 
