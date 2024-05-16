@@ -15,7 +15,7 @@ def MARD(weights,em_iter,vbem_iter):
     return np.mean(ARD_list)
 
 
-def minimization(intitial_guess, em_iter, vbem_iter, ground_truth,MARD=MARD):
+def minimization(intitial_guess, em_iter, vbem_iter, ground_truth, MARD=MARD):
     result = minimize(MARD, x0=initial_guess, args=(em_iter,vbem_iter,ground_truth), bounds=[(0, 1), (0, 1)])
     return result.x
 
