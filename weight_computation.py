@@ -5,6 +5,7 @@ def MARD(weights,em_iter,vbem_iter):
     ground_truth = pd.read_csv("salmon-analysis-main/ground_truth/1.sim.genes.results",delimiter="\t")[["TPM"]].to_numpy()
     weighted_avg = weights[0] * em_iter + weights[1] * vbem_iter
     ARD_list = []
+    
     for i in range(len(ground_truth)):
 
         if ground_truth[i] == weighted_avg[i] and ground_truth[i] == 0:
